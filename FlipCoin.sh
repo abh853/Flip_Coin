@@ -1,3 +1,11 @@
-#!/bin/bash -x
+#!/bin/bash
+flip=$(( (RANDOM % 2) ))
+echo $flip
 
-echo "Welcome to flipcoin"
+if [ $flip -eq 1 ]
+then
+	echo "head:"
+elif [ $flip -eq 0 ]
+then
+	echo "tail"
+fi
